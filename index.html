@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore Tailwind</title>
+    <!-- tailwind stuffs start -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              buyButton: "#85A019",
+              headingCol: "#363958",
+              priceCol: "#fabe4c",
+              imgBg: "#f1f1f1",
+              pragraphCol: "#3e3e3e",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- tailwind stuffs end -->
+  </head>
+  <body>
+    <header id="home" class="bg-[#FFFBF0]">
+      <nav
+        class="container max-w-screen-xl mx-auto flex justify-between px-2 py-8"
+      >
+        <a href="index.html">
+          <img class="w-72" src="images/logo.png" alt="Website Logo" />
+        </a>
+        <div class="block md:hidden ml-4">
+          <i class="fas fa-bars text-2xl"></i>
+        </div>
+        <div class="hidden md:block">
+          <div class="flex gap-10 h-full items-center">
+            <a href="#home">Home</a>
+            <a href="#women">Women's</a>
+            <a href="#men">Men's</a>
+            <a href="#service">Service</a>
+          </div>
+        </div>
+      </nav>
+      <section
+        class="container max-w-screen-xl mx-auto flex px-2 items-center justify-between flex-col md:flex-row pb-24"
+      >
+        <div class="w-full md:w-6/12 px-4 my-8">
+          <h1 class="text-6xl md:text-7xl font-normal font-sans">
+            <span class="text-priceCol">Be the Penguins</span>
+            <br />
+            <span class="text-headingCol">of Winter</span>
+          </h1>
+          <p class="text-base text-pragraphCol font-normal my-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias
+            eveniet id provident tenetur!
+          </p>
+          <button class="text-white px-8 py-4 bg-buyButton rounded-lg">
+            <i class="fas fa-shopping-cart"></i> BUY NOW
+          </button>
+        </div>
+        <div class="w-full md:w-5/12">
+          <img class="mx-auto" src="images/model.png" alt="" />
+        </div>
+      </section>
+    </header>
+    <main class="container max-w-screen-xl mx-auto px-2">
+      <section id="women" class="py-16">
+        <h1 class="text-headingCol text-5xl font-normal">WOMEN'S JACKET</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8">
+          <div class="p-8 shadow-xl flex flex-col gap-5 rounded-xl">
+            <div class="p-4 rounded-lg bg-imgBg">
+              <img src="images/jacket-1.png" alt="" />
+            </div>
+
+            <h4 class="text-headingCol font-normal text-2xl">
+              Yellow Coat Jacket
+            </h4>
+            <p class="text-base text-pragraphCol font-normal">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
+              nemo.
+            </p>
+            <div class="flex items-center justify-between">
+              <h3 class="text-priceCol text-4xl">$234</h3>
+              <button class="text-white px-8 py-4 bg-buyButton rounded-lg">
+                <i class="fas fa-shopping-cart"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="p-8 shadow-xl flex flex-col gap-5 rounded-xl">
+            <div class="p-4 rounded-lg bg-imgBg">
+              <img src="images/jacket-2.png" alt="" />
+            </div>
+
+            <h4 class="text-headingCol font-normal text-2xl">Ladies Jacket</h4>
+            <p class="text-base text-pragraphCol font-normal">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
+              nemo.
+            </p>
+            <div class="flex items-center justify-between">
+              <h3 class="text-priceCol text-4xl">$234</h3>
+              <button class="text-white px-8 py-4 bg-buyButton rounded-lg">
+                <i class="fas fa-shopping-cart"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="p-8 shadow-xl flex flex-col gap-5 rounded-xl">
+            <div class="p-4 rounded-lg bg-imgBg">
+              <img src="images/jacket-3.png" alt="" />
+            </div>
+
+            <h4 class="text-headingCol font-normal text-2xl">
+              Woman Leather Jacket
+            </h4>
+            <p class="text-base text-pragraphCol font-normal">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
+              nemo.
+            </p>
+            <div class="flex items-center justify-between">
+              <h3 class="text-priceCol text-4xl">$234</h3>
+              <button class="text-white px-8 py-4 bg-buyButton rounded-lg">
+                <i class="fas fa-shopping-cart"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="men" class="py-16">
+        <h1 class="text-headingCol text-5xl font-normal">MEN'S JACKET</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-8">
+          <div class="p-8 shadow-xl flex flex-col gap-5 rounded-xl">
+            <div class="p-4 rounded-lg bg-imgBg">
+              <img src="images/jacket-4.png" alt="" />
+            </div>
+
+            <h4 class="text-headingCol font-normal text-2xl">
+              Snowboard Jacket Mens
+            </h4>
+            <p class="text-base text-pragraphCol font-normal">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
+              nemo.
+            </p>
+            <div class="flex items-center justify-between">
+              <h3 class="text-priceCol text-4xl">$234</h3>
+              <button class="text-white px-8 py-4 bg-buyButton rounded-lg">
+                <i class="fas fa-shopping-cart"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="p-8 shadow-xl flex flex-col gap-5 rounded-xl">
+            <div class="p-4 rounded-lg bg-imgBg">
+              <img src="images/jacket-5.png" alt="" />
+            </div>
+
+            <h4 class="text-headingCol font-normal text-2xl">
+              Man Leather Jackets
+            </h4>
+            <p class="text-base text-pragraphCol font-normal">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
+              nemo.
+            </p>
+            <div class="flex items-center justify-between">
+              <h3 class="text-priceCol text-4xl">$234</h3>
+              <button class="text-white px-8 py-4 bg-buyButton rounded-lg">
+                <i class="fas fa-shopping-cart"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+          <div class="p-8 shadow-xl flex flex-col gap-5 rounded-xl">
+            <div class="p-4 rounded-lg bg-imgBg">
+              <img src="images/jacket-6.png" alt="" />
+            </div>
+
+            <h4 class="text-headingCol font-normal text-2xl">
+              Man Casual Jackets
+            </h4>
+            <p class="text-base text-pragraphCol font-normal">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint,
+              nemo.
+            </p>
+            <div class="flex items-center justify-between">
+              <h3 class="text-priceCol text-4xl">$234</h3>
+              <button class="text-white px-8 py-4 bg-buyButton rounded-lg">
+                <i class="fas fa-shopping-cart"></i> BUY NOW
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="service" class="py-16 lg:flex">
+        <div class="flex flex-col gap-5 lg:basis-1/2 p-6">
+          <div
+            class="flex flex-col md:flex-row justify-center gap-9 rounded-lg p-7 shadow-lg"
+          >
+            <div class="w-20 h-20"><img src="images/house.png" alt="" /></div>
+            <div>
+              <h4 class="text-headingCol font-normal text-2xl">
+                Find the Perfect Fit
+              </h4>
+              <p class="text-base text-pragraphCol font-normal">
+                Everybody is different, which is why we offer styles for every
+                body.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-center gap-9 rounded-lg p-7 shadow-lg"
+          >
+            <div class="w-20 h-20"><img src="images/box.png" alt="" /></div>
+            <div>
+              <h4 class="text-headingCol font-normal text-2xl">
+                Free Exchanges
+              </h4>
+              <p class="text-base text-pragraphCol font-normal">
+                One of the many reasons you can shop with peace of mind.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col md:flex-row justify-center gap-9 rounded-lg p-7 shadow-lg"
+          >
+            <div class="w-20 h-20">
+              <img src="images/question.png" alt="" />
+            </div>
+            <div>
+              <h4 class="text-headingCol font-normal text-2xl">
+                Contact Our Seller
+              </h4>
+              <p class="text-base text-pragraphCol font-normal">
+                They are here to help you. That's quite literally what we pay
+                them for.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="md:basis-1/2 p-6">
+          <img src="images/shopping.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/51044067e8.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
